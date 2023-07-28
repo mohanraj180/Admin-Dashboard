@@ -1,0 +1,25 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    background-color: palevioletred;
+    grid-column: 2 / 3;
+}
+
+.side-bar {
+    background-color: skyblue;
+}
+
+.main-content {
+    background-color: orange;
+}
