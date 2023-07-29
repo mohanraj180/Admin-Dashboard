@@ -1,6 +1,7 @@
 * {
-    border: 0;
+    padding: 0;
     margin: 0;
+    /* border: 0.1px solid black; */
 }
 
 body {
@@ -9,15 +10,47 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
+    font-family: 'Roboto', serif;
+
 }
 
 .header {
     background-color: palevioletred;
     grid-column: 2 / 3;
+    display: grid;
+    grid-row: 0.6fr 1fr;
+}
+
+.head-1 {
+    display: grid;
+    grid-template-columns: auto 0.8fr auto auto auto;
+    place-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="text"] {
+    height: 25px;
+    border: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-self: start;
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
 .side-bar {
     background-color: skyblue;
+    grid-row: 1 / -1;
 }
 
 .main-content {
