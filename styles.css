@@ -19,14 +19,14 @@ body {
     grid-column: 2 / 3;
     display: grid;
     grid-row: 0.6fr 1fr;
-    
+
 }
 
 .head-1 {
     padding: 15px 0 10px 40px;
     margin-left: -100px;
     display: grid;
-    grid-template-columns: auto 0.8fr auto auto auto;
+    grid-template-columns: max-content 0.8fr max-content max-content max-content;
     justify-content: center;
     place-items: center;
     column-gap: 20px;
@@ -50,9 +50,49 @@ input[type="text"] {
 }
 
 .profile-pic {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+}
+
+.head-2 {
+    padding: 15px 0 10px 40px;
+    margin-left: -75px;
+    display: grid;
+    grid-template-columns: auto 0.8fr auto auto auto;
+    justify-content: center;
+    place-items: center;
+    column-gap: 20px;
+
+}
+
+.user-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user {
+    justify-self: left;
+}
+
+.user h6, .user p {
+    font-weight: 900;
+}
+
+.user p {
+    font-size: larger;
+}
+
+button {
+    appearance: none;
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 20px / 20px;
+    background-color: rgb(91, 145, 224);
+    color: white;
+    font-weight: 600;
+    font-size: small;
 }
 
 .side-bar {
