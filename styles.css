@@ -89,15 +89,53 @@ button {
     border: 0;
     padding: 10px 25px;
     border-radius: 20px / 20px;
-    background-color: rgb(91, 145, 224);
+    background-color: #5b91e0;
     color: white;
     font-weight: 600;
     font-size: small;
 }
 
 .side-bar {
-    background-color: skyblue;
+    color: white;
+    background-color: #5b91e0;
     grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: repeat(10, max-content);
+    column-gap: 10px;
+    justify-content: left;
+    align-items: center;
+}
+
+.dash-head-icon {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    justify-self: end;
+}
+
+.dash-head {
+    font-size: x-large;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    align-self: center;
+}
+
+.side-bar .options, .side-bar .dash-icon {
+    padding-bottom: 20px;
+}
+
+.side-bar p {
+    font-weight: 700;
+}
+.dash-icon {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.opt-setting {
+    padding-top: 40px;
 }
 
 .main-content {
