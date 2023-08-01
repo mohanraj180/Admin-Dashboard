@@ -38,7 +38,7 @@ body {
 }
 
 input[type="text"] {
-    background-color: rgb(238, 233, 233);
+    background-color: #eee9e9;
     min-width: 85%;
     height: 30px;
     border: 0;
@@ -76,7 +76,8 @@ input[type="text"] {
     justify-self: left;
 }
 
-.user h6, .user p {
+.user h6,
+.user p {
     font-weight: 900;
 }
 
@@ -122,13 +123,15 @@ button {
     align-self: center;
 }
 
-.side-bar .options, .side-bar .dash-icon {
+.side-bar .options,
+.side-bar .dash-icon {
     padding-bottom: 20px;
 }
 
 .side-bar p {
     font-weight: 700;
 }
+
 .dash-icon {
     margin-left: 20px;
     margin-right: 10px;
@@ -139,5 +142,34 @@ button {
 }
 
 .main-content {
-    background-color: orange;
+    background-color: #eee9e9;
+    display: grid;
+    grid-template-columns: 2.25fr 1fr;
+    grid-template-rows: 1fr 0.75fr;
+    column-gap: 15px;
+}
+
+.projects {
+    margin-left: 15px;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 18px;
+    row-gap: 18px;
+}
+
+.cards {
+    background-color: #fff;
+    padding: 20px 15px 20px 15px;
+    border-left: 7px solid orange;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.75fr 0.25fr;
 }
