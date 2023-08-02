@@ -143,6 +143,7 @@ button {
 
 .main-content {
     background-color: #eee9e9;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: 2.25fr 1fr;
     grid-template-rows: 1fr 0.75fr;
@@ -172,4 +173,30 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.75fr 0.25fr;
+}
+
+.card-icons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: end;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.content-head {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.project-head {
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 2px;
+}
+
+.project-brief {
+    font-size: 14px;
+    font-weight: 300;
 }
