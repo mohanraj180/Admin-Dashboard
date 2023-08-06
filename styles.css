@@ -16,9 +16,12 @@ body {
 
 .header {
     background-color: white;
+    margin: 0 -9px 4px -9px;
+    box-shadow: 0 8px 6px -6px #979696;
+    /* border-bottom: 1px solid #5b91e0; */
     grid-column: 2 / 3;
     display: grid;
-    grid-row: 0.6fr 1fr;
+    
 
 }
 
