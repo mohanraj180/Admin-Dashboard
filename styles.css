@@ -179,6 +179,7 @@ button {
     padding: 20px 15px 20px 15px;
     border-left: 7px solid orange;
     border-radius: 7px;
+    box-shadow: 2px 4px 8px -8px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.75fr 0.25fr;
@@ -215,6 +216,7 @@ button {
     padding: 30px;
     margin-right: 30px;
     border-radius: 10px;
+    box-shadow: 2px 4px 8px -8px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, max-content);
@@ -246,6 +248,7 @@ button {
     padding: 30px;
     margin-right: 30px;
     border-radius: 10px;
+    box-shadow: 2px 4px 8px -8px;
     display: grid;
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(4, 1fr);
